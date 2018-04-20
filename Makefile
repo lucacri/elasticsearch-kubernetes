@@ -1,4 +1,4 @@
-TAG ?= 6.2.1
+TAG ?= 6.2.4
 IMAGE := lucacri/elasticsearch-kubernetes
 
 build:

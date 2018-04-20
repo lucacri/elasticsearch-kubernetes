@@ -1,6 +1,6 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.1
+FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.4
 
-MAINTAINER Luca Critelli <lucacri@gmail.com>
+LABEL maintainer="lucacri@gmail.com"
 
 ADD start.sh /start.sh
 ADD /elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
