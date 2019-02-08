@@ -1,4 +1,4 @@
-TAG ?= 6.2.4
+TAG ?= 6.6.0
 IMAGE := lucacri/elasticsearch-kubernetes
 
 build:
@@ -8,7 +8,7 @@ build:
 	@echo "------------------"
 	@echo ""
 	@echo ""
-	@docker build -t ${IMAGE}:${TAG} .
+	@docker build --pull -t ${IMAGE}:${TAG} .
 	@docker tag ${IMAGE}:${TAG} ${IMAGE}:latest
 
 push:
